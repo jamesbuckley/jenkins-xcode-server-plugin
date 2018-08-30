@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" >
+    <f:entry title="Xcode Server" field="xcodeServerUrl">
+        <f:textbox />
+    </f:entry>
+    <f:entry name="botName" title="Available Bots" field="botName">
+        <select name="botName">
+            <option value="daa32548f5287ee05996eef90e01d52b">Nightly build test bot</option>
+            <option value="5a8892dba152d0865518a76089017998">Master Build Bot</option>
+        </select>
+    </f:entry>
+</j:jelly>
