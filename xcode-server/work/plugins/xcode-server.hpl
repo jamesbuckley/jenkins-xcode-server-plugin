@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: xcode-server
+Long-Name: Xcode Server Integration
+Plugin-Version: 1.0.1-SNAPSHOT (private-d567c2f6-jamesbuckley)
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+Libraries: /Users/jamesbuckley/Documents/Personal/jenkins-xcode-server
+ -plugin/xcode-server/src/main/resources,/Users/jamesbuckley/Documents
+ /Personal/jenkins-xcode-server-plugin/xcode-server/target/classes,/Us
+ ers/jamesbuckley/.m2/repository/commons-codec/commons-codec/1.10/comm
+ ons-codec-1.10.jar,/Users/jamesbuckley/.m2/repository/org/apache/http
+ components/httpclient/4.5.6/httpclient-4.5.6.jar,/Users/jamesbuckley/
+ .m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4
+ .10.jar,/Users/jamesbuckley/.m2/repository/org/json/json/20180813/jso
+ n-20180813.jar
+Resource-Path: /Users/jamesbuckley/Documents/Personal/jenkins-xcode-se
+ rver-plugin/xcode-server/src/main/webapp
+

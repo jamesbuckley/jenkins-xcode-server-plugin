@@ -46,7 +46,7 @@ public class HttpBuilder {
         }
     }
 
-    public static String executeGetRequest(String url){
+    public static String executeGetRequestStringResponse(String url){
 
         StringBuffer result = null;
         try {
@@ -64,7 +64,7 @@ public class HttpBuilder {
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-        return result != null ? result.toString() : null;
+        return result != null ? result.toString() : "";
     }
 
     public static String executePostRequest(String url){
@@ -85,6 +85,20 @@ public class HttpBuilder {
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-        return result != null ? result.toString() : null;
+        return result != null ? result.toString() : "";
+    }
+
+    public static int executeGetRequestResponseCode(String url){
+
+        StringBuffer result = null;
+        try {
+            HttpGet request = new HttpGet(url);
+            request.addHeader("User-Agent", USER_AGENT);
+            HttpResponse response = getHttpClient().execute(request);
+            return response.getStatusLine().getStatusCode();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        return 500;
     }
 }

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <io.jenkins.plugins.XcodeServerIntegrationBuilder plugin="xcode-server@1.0.1-SNAPSHOT">
+      <xcodeServerUrl>https://mac-mini-05.local/xcode/internal</xcodeServerUrl>
+      <botName>daa32548f5287ee05996eef90e01d52b</botName>
+    </io.jenkins.plugins.XcodeServerIntegrationBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -3,10 +3,7 @@
     <f:entry title="Xcode Server" field="xcodeServerUrl">
         <f:textbox />
     </f:entry>
-    <f:entry name="botName" title="Available Bots" field="botName">
-        <select name="botName">
-            <option value="daa32548f5287ee05996eef90e01d52b">Nightly build test bot</option>
-            <option value="5a8892dba152d0865518a76089017998">Master Build Bot</option>
-        </select>
+    <f:entry title="Available Bots" field="botName">
+        <f:select default="No Bot Selected" name="botName"/>
     </f:entry>
 </j:jelly>
